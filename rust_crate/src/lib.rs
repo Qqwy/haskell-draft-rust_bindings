@@ -1,10 +1,10 @@
 #[no_mangle]
-pub fn hello_world() {
+pub extern "C" fn rs_hello_world() {
   println!("Hello, world!");
 }
 
 #[no_mangle]
-pub fn add(left: usize, right: usize) -> usize {
+pub extern "C" fn rs_add(left: usize, right: usize) -> usize {
     left + right
 }
 
