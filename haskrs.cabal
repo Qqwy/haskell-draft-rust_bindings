@@ -9,9 +9,26 @@ author:             Qqwy / Marten
 maintainer:         w-m@wmcode.nl
 -- copyright:
 category:           Data
-build-type:         Simple
+build-type:         Custom
 extra-doc-files:    CHANGELOG.md
--- extra-source-files:
+extra-source-files:
+  -- We have Cargo settings in the root folder
+  -- so 'cargo build', 'cargo test' etc
+  -- can be ran from there
+  ./Cargo.toml
+  ./Cargo.lock
+  -- Add all actual Rust crate files here:
+  ./rust_crate/src/*.rs
+  ./rust_crate/Cargo.toml
+
+custom-setup
+  setup-depends:
+    , aeson
+    , base
+    , bytestring
+    , Cabal
+    , directory
+    , filepath
 
 common warnings
     ghc-options: -Wall

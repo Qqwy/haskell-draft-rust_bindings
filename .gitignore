@@ -1,0 +1,5 @@
+# Cabal's build directory
+dist-newstyle/
+
+# Cargo's build directory
+/target

@@ -1,0 +1,8 @@
+[workspace]
+
+# Resolver 2 is default in the 2021 Edition, but the workspace doesn't know that
+resolver = "2"
+
+members = [
+    "rust_crate"
+]
