@@ -4,5 +4,5 @@
 resolver = "2"
 
 members = [
-    "haskrs_rs"
+    "rust_src"
 ]
